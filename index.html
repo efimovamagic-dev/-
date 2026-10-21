@@ -201,18 +201,7 @@
 </div>
 </div>
 </main>
-<footer class="ml-legal">
-<div class="ml-wrap ml-legal-inner">
-<div>
-<p class="ml-school">ШКОЛА<br>ЖЕНСКОЙ МАГИИ</p>
-<p>© <span data-year>2026</span> Все права защищены</p>
-</div>
-<div>
-<p>Почта для связи: <a href="mailto:mail@efimova-magic.ru">mail@efimova-magic.ru</a>
-</p>
-</div>
-</div>
-</footer>
+
 <script>
   (() => {
     'use strict';
@@ -220,7 +209,6 @@
     if (!root) return;
     const key = 'candle-magic-offer-deadline-v1';
     const all = selector => root.querySelectorAll(selector);
-    all('[data-year]').forEach(el => el.textContent = new Date().getFullYear());
     let deadline;
     try { deadline = Number(localStorage.getItem(key)); } catch (_) {}
     if (!Number.isFinite(deadline) || deadline <= 0) {
