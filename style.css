@@ -1,82 +1,97 @@
 
-.magic-landing,
-.magic-landing * { box-sizing: border-box !important; }
-.magic-landing {
-  width: 100% !important; max-width: 100% !important; margin: 0 !important;
-  padding: 0 !important; isolation: isolate !important;
-  background: radial-gradient(ellipse at 90% 8%, #523014 0%, transparent 38%), radial-gradient(ellipse at 0% 65%, #34200f 0%, transparent 40%), #100d0a !important;
-  color: #ffffff !important; font: 16px/1.7 Arial, sans-serif !important;
-  text-align: left !important; overflow-wrap: anywhere !important;
-  -webkit-text-size-adjust: 100% !important;
+.magic-landing,.magic-landing *{box-sizing:border-box!important}
+.magic-landing{width:100%!important;margin:0!important;color:#fff!important;background:#0d0b08!important;font:16px/1.5 Arial,sans-serif!important;isolation:isolate!important;overflow-wrap:anywhere!important}
+.magic-landing .ml-wrap{width:min(1100px,calc(100% - 48px))!important;margin:0 auto!important}
+.magic-landing h1,.magic-landing h2,.magic-landing h3,.magic-landing p{margin:0!important;padding:0!important;text-transform:none!important;letter-spacing:normal!important}
+.magic-landing h1,.magic-landing h2{font-family:Georgia,serif!important;font-weight:400!important;line-height:1.04!important;color:#f6e7be!important}
+.magic-landing h1{font-size:clamp(42px,5.1vw,68px)!important;max-width:680px!important;text-shadow:0 2px 15px #000!important}
+.magic-landing h1 small{display:block!important;font-size:.48em!important;line-height:1.25!important;margin-top:8px!important;color:inherit!important;font-family:inherit!important}
+.magic-landing h2{font-size:38px!important}
+.magic-landing h3{font:700 20px/1.2 Georgia,serif!important;color:#fff1cf!important}
+.magic-landing p{color:#fff!important;font:16px/1.5 Arial,sans-serif!important}
+.magic-landing .ml-hero{position:relative!important;min-height:580px!important;overflow:hidden!important;background:#130d08!important;border-bottom:1px solid #d4af37!important}
+.magic-landing .ml-hero-photo{position:absolute!important;inset:0 0 0 auto!important;width:61%!important;height:100%!important;object-fit:cover!important;object-position:center 27%!important;max-width:100%!important;display:block!important}
+.magic-landing .ml-hero::after{position:absolute!important;content:''!important;inset:0!important;background:linear-gradient(90deg,#090705 0%,#0b0806fa 28%,#100b07b8 48%,#0b080610 74%),linear-gradient(0deg,#100b07c9,transparent 40%)!important;pointer-events:none!important}
+.magic-landing .ml-hero-content{position:relative!important;z-index:1!important;padding-top:24px!important;padding-bottom:46px!important}
+.magic-landing .ml-banner{display:flex!important;align-items:center!important;gap:16px!important;margin-bottom:17px!important;color:#f9d56d!important;font:700 13px/1.4 Arial,sans-serif!important}
+.magic-landing .ml-banner strong{padding:8px 20px!important;border-radius:30px 8px 25px 6px!important;background:linear-gradient(100deg,#e7ae3b,#ffe18b)!important;color:#000!important;white-space:nowrap!important}
+.magic-landing .ml-subtitle{margin-top:20px!important;font:24px/1.25 Georgia,serif!important;color:#fff1ce!important;max-width:580px!important}
+.magic-landing .ml-subtitle strong{display:block!important;margin-top:4px!important;font:700 32px/1.2 Georgia,serif!important;color:#eac45c!important}
+.magic-landing .ml-description{margin-top:12px!important;max-width:540px!important}
+.magic-landing .ml-price{display:flex!important;align-items:center!important;flex-wrap:wrap!important;gap:23px!important;margin:15px 0 12px!important;color:#fff!important}
+.magic-landing .ml-price del{font:18px/1.3 Arial,sans-serif!important;color:#fff!important;text-decoration:line-through #b05d4b 2px!important}
+.magic-landing .ml-price strong{font:700 65px/1 Georgia,serif!important;color:#ffda63!important;text-shadow:0 0 25px #e5a33366!important;white-space:nowrap!important}
+.magic-landing .ml-price>span{font:11px/1.3 Arial,sans-serif!important;color:#fff!important}
+.magic-landing .ml-button{display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:25px!important;min-height:64px!important;padding:18px 28px!important;border:1px solid #ffe29a!important;border-radius:5px!important;background:#d4af37!important;color:#000!important;-webkit-text-fill-color:#000!important;font:800 17px/1.3 Arial,sans-serif!important;text-align:center!important;cursor:pointer!important;box-shadow:0 0 25px #f0b83766,inset 0 2px 8px #fff4a866!important;max-width:100%!important;white-space:normal!important;transition:box-shadow .2s!important}
+.magic-landing .ml-button:hover:not(:disabled){box-shadow:0 0 40px #ffca5599!important}
+.magic-landing .ml-button:focus-visible{outline:3px solid #fff!important;outline-offset:4px!important}
+.magic-landing .ml-button:disabled{opacity:.65!important;cursor:default!important}
+.magic-landing .ml-button span{color:#000!important}
+.magic-landing .ml-hero-timer{position:absolute!important;right:0!important;bottom:35px!important;width:310px!important}
+.magic-landing .ml-timer-box{padding:11px 15px!important;background:#100b07c9!important;border:1px solid #a47e395c!important;border-radius:8px!important;text-align:center!important}
+.magic-landing .ml-timer-box p{font:9px/1.4 Arial,sans-serif!important;margin-bottom:6px!important;color:#fff!important}
+.magic-landing .ml-timer{display:flex!important;justify-content:center!important;gap:16px!important;color:#fff1cf!important}
+.magic-landing .ml-timer>div{display:flex!important;flex-direction:column!important;min-width:42px!important}
+.magic-landing .ml-timer b{font:32px/1.15 Georgia,serif!important;color:#fff1cf!important;font-variant-numeric:tabular-nums!important}
+.magic-landing .ml-timer small{font:9px/1.5 Arial,sans-serif!important;text-transform:uppercase!important;color:#fff!important}
+.magic-landing .ml-timer i{font:25px/1.2 Georgia,serif!important;color:#e5bf68!important}
+.magic-landing .ml-intro{position:relative!important;overflow:hidden!important;background:#e7ca91!important;color:#211508!important;min-height:290px!important}
+.magic-landing .ml-intro-photo{position:absolute!important;right:0!important;top:0!important;height:100%!important;width:53%!important;object-fit:cover!important;max-width:100%!important}
+.magic-landing .ml-intro::after{content:''!important;position:absolute!important;inset:0!important;background:linear-gradient(90deg,#efd7a5 0%,#efd7a5 40%,#efd7a5cc 53%,transparent 77%)!important;pointer-events:none!important}
+.magic-landing .ml-intro-copy{position:relative!important;z-index:1!important;padding:32px 0!important;max-width:670px!important}
+.magic-landing .ml-intro h2{color:#241809!important;font-size:43px!important;line-height:1.05!important}
+.magic-landing .ml-intro h2 small{display:block!important;font:700 29px/1.1 Georgia,serif!important;color:inherit!important;margin-top:6px!important}
+.magic-landing .ml-intro p{max-width:510px!important;margin-top:16px!important;font-size:15px!important;color:#241809!important}
+.magic-landing .ml-content{padding:22px 0 0!important;background:radial-gradient(ellipse at 0% 30%,#6d3d164d,transparent 40%),radial-gradient(ellipse at 100% 55%,#6d3d164d,transparent 40%),#0d0b08!important}
+.magic-landing .ml-heading{text-align:center!important;margin-bottom:22px!important}
+.magic-landing .ml-grid{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:22px!important;margin-bottom:26px!important}
+.magic-landing .ml-card{position:relative!important;min-width:0!important;border:1px solid #b7904d88!important;border-radius:8px!important;overflow:hidden!important;background:#0c0b09!important;box-shadow:0 3px 20px #0006!important}
+.magic-landing .ml-card img{display:block!important;width:100%!important;height:auto!important;max-width:100%!important;aspect-ratio:2.25!important;object-fit:cover!important;border-radius:8px 8px 0 0!important;mask-image:linear-gradient(#000 65%,transparent)!important}
+.magic-landing .ml-number{position:absolute!important;left:0!important;top:0!important;width:57px!important;height:57px!important;display:grid!important;place-items:center!important;border:2px solid #e3be64!important;border-radius:50%!important;background:radial-gradient(circle at 40% 35%,#a17127,#37210b)!important;color:#ffe9a7!important;font:36px/1 Georgia,serif!important;box-shadow:0 0 15px #d4af3740!important}
+.magic-landing .ml-card-copy{padding:0 20px 20px!important;position:relative!important;margin-top:-3px!important}
+.magic-landing .ml-card p{margin-top:10px!important;font-size:14px!important;line-height:1.35!important}
+.magic-landing .ml-bonuses{grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:18px!important;margin-bottom:15px!important}
+.magic-landing .ml-bonuses img{aspect-ratio:2.2!important}
+.magic-landing .ml-bonuses .ml-number{width:43px!important;height:43px!important;font-size:24px!important}
+.magic-landing .ml-bonuses h3{font-size:18px!important}
+.magic-landing .ml-bonuses .ml-card-copy{padding:0 14px 14px!important}
+.magic-landing .ml-bonuses p{font-size:13px!important;margin-top:5px!important}
+.magic-landing .ml-offer{display:grid!important;grid-template-columns:1fr 1.1fr .85fr!important;gap:24px!important;align-items:center!important;border:1px solid #e4c887!important;border-radius:10px!important;padding:21px 25px!important;background:radial-gradient(ellipse at 35% 50%,#4f301a66,transparent),#100d0a!important;box-shadow:inset 0 0 0 5px #d4af3710!important}
+.magic-landing .ml-offer h2{font-size:27px!important;line-height:1.12!important}
+.magic-landing .ml-offer h2 span{color:#e5c66c!important}
+.magic-landing .ml-offer .ml-price{gap:14px!important;margin:0 0 9px!important}
+.magic-landing .ml-offer .ml-price strong{font-size:49px!important}
+.magic-landing .ml-offer .ml-price del{font-size:14px!important}
+.magic-landing .ml-offer .ml-button{width:100%!important;min-height:48px!important;padding:12px!important;font-size:15px!important}
+.magic-landing .ml-benefits{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:22px!important;padding:22px 10px!important}
+.magic-landing .ml-benefits>div{display:flex!important;gap:12px!important;align-items:center!important}
+.magic-landing .ml-benefits b{font:30px/1 Georgia,serif!important;color:#d4af37!important}
+.magic-landing .ml-benefits p{font:12px/1.35 Arial,sans-serif!important;color:#fff!important}
+.magic-landing .ml-footer{text-align:center!important;padding:8px 15px 18px!important}
+.magic-landing .ml-footer p{font-size:11px!important;color:#fff!important}
+.magic-landing .ml-status:empty{display:none!important}
+.magic-landing .ml-status{background:#100d0a!important;border:1px solid #d4af37!important;padding:10px!important;margin-top:12px!important;font:14px/1.4 Arial,sans-serif!important;color:#fff!important;max-width:500px!important}
+.magic-landing .ml-expiry{margin-top:10px!important;font-size:12px!important}
+@media(max-width:1000px) and (min-width:768px){.magic-landing h1{font-size:52px!important}.magic-landing .ml-hero-timer{width:250px!important}.magic-landing .ml-hero .ml-button{font-size:14px!important}.magic-landing .ml-offer{gap:15px!important;padding:18px!important}.magic-landing .ml-offer h2{font-size:23px!important}.magic-landing .ml-offer .ml-price strong{font-size:42px!important}}
+@media(max-width:767px){
+.magic-landing .ml-wrap{width:calc(100% - 32px)!important}
+.magic-landing .ml-hero{min-height:0!important;display:flex!important;flex-direction:column!important}
+.magic-landing .ml-hero-photo{position:relative!important;width:100%!important;height:auto!important;max-height:520px!important;aspect-ratio:1.1!important;object-position:center 22%!important;order:2!important}
+.magic-landing .ml-hero::after{display:none!important}
+.magic-landing .ml-hero-content{padding:20px 0 0!important;display:flex!important;flex-direction:column!important;order:1!important}
+.magic-landing h1{font-size:clamp(35px,8.8vw,56px)!important;max-width:100%!important}
+.magic-landing .ml-banner{font-size:10px!important;gap:10px!important;margin-bottom:16px!important}
+.magic-landing .ml-banner strong{padding:7px 12px!important}
+.magic-landing .ml-subtitle{font-size:20px!important;margin-top:15px!important}.magic-landing .ml-subtitle strong{font-size:27px!important}
+.magic-landing .ml-description{font-size:14px!important}.magic-landing .ml-price{gap:16px!important}.magic-landing .ml-price strong{font-size:64px!important}
+.magic-landing .ml-button{width:100%!important;font-size:15px!important;min-height:60px!important;padding:16px!important;gap:12px!important}
+.magic-landing .ml-hero-timer{position:static!important;width:100%!important;margin:20px 0!important}
+.magic-landing .ml-intro{display:flex!important;flex-direction:column!important}.magic-landing .ml-intro-photo{position:relative!important;width:100%!important;height:auto!important;aspect-ratio:1.8!important;object-fit:cover!important;order:2!important}.magic-landing .ml-intro::after{display:none!important}
+.magic-landing .ml-intro-copy{padding:26px 0!important}.magic-landing .ml-intro h2{font-size:34px!important}.magic-landing .ml-intro h2 small{font-size:25px!important}.magic-landing .ml-intro p{font-size:15px!important}
+.magic-landing h2{font-size:29px!important}.magic-landing .ml-content{padding-top:25px!important}
+.magic-landing .ml-grid,.magic-landing .ml-bonuses{display:flex!important;flex-direction:column!important;gap:22px!important;margin-bottom:28px!important}
+.magic-landing .ml-card{width:100%!important}.magic-landing .ml-card img{aspect-ratio:1.9!important;max-width:100%!important;margin:auto!important}.magic-landing .ml-card h3{font-size:23px!important}.magic-landing .ml-card p{font-size:16px!important;line-height:1.45!important}.magic-landing .ml-card-copy{padding:0 20px 22px!important}
+.magic-landing .ml-offer{display:flex!important;flex-direction:column!important;text-align:center!important;padding:24px 18px!important;gap:20px!important}.magic-landing .ml-offer>div{width:100%!important}.magic-landing .ml-offer h2{font-size:30px!important}.magic-landing .ml-offer .ml-price{justify-content:center!important}.magic-landing .ml-offer .ml-price strong{font-size:59px!important}.magic-landing .ml-offer .ml-button{min-height:58px!important;font-size:17px!important}
+.magic-landing .ml-benefits{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:20px 12px!important;padding:24px 0!important}.magic-landing .ml-benefits p{font-size:11px!important}
 }
-.magic-landing h1, .magic-landing h2, .magic-landing h3 {
-  display: block !important; margin: 0 0 20px !important; padding: 0 !important;
-  color: #d4af37 !important; font-family: Georgia, serif !important;
-  font-weight: 400 !important; line-height: 1.18 !important;
-  text-transform: none !important; letter-spacing: normal !important;
-  background: none !important; border: 0 !important;
-}
-.magic-landing h1 { font-size: clamp(36px, 4.6vw, 62px) !important; }
-.magic-landing h2 { font-size: clamp(30px, 3.3vw, 44px) !important; }
-.magic-landing h3 { font-size: 27px !important; }
-.magic-landing p { display: block !important; margin: 0 0 18px !important; padding: 0 !important; color: #ffffff !important; font: 16px/1.7 Arial, sans-serif !important; }
-.magic-landing a { color: #ffffff !important; text-decoration: none !important; }
-.magic-landing strong, .magic-landing small, .magic-landing span { color: inherit !important; }
-.magic-landing .ml-wrap { width: min(1160px, calc(100% - 48px)) !important; margin: 0 auto !important; }
-.magic-landing .ml-banner { padding: 16px 20px !important; background: #d4af37 !important; color: #000000 !important; text-align: center !important; font: 800 16px/1.5 Arial, sans-serif !important; }
-.magic-landing .ml-header { padding: 25px 0 !important; border-bottom: 1px solid #d4af3766 !important; color: #d4af37 !important; font: 700 18px/1.5 Georgia, serif !important; letter-spacing: 2px !important; }
-.magic-landing .ml-section { padding: 64px 0 !important; }
-.magic-landing .ml-columns { display: flex !important; flex-direction: row !important; align-items: center !important; gap: 48px !important; }
-.magic-landing .ml-column { flex: 1 1 0 !important; min-width: 0 !important; width: 100% !important; }
-.magic-landing .ml-eyebrow { color: #d4af37 !important; font-size: 13px !important; font-weight: 700 !important; letter-spacing: 2px !important; }
-.magic-landing .ml-image { display: block !important; width: 100% !important; max-width: 100% !important; height: auto !important; aspect-ratio: 4 / 3 !important; object-fit: cover !important; border-radius: 8px !important; margin: 0 auto !important; border: 1px solid #d4af374d !important; }
-.magic-landing .ml-portrait { aspect-ratio: 4 / 5 !important; object-position: center 25% !important; box-shadow: 0 0 45px #d4af3726 !important; }
-.magic-landing .ml-price { display: flex !important; align-items: center !important; justify-content: flex-start !important; flex-wrap: wrap !important; gap: 22px !important; margin: 22px 0 !important; }
-.magic-landing .ml-price del { color: #ffffff !important; font: 20px/1.4 Arial, sans-serif !important; text-decoration: line-through !important; text-decoration-color: #ffffff !important; }
-.magic-landing .ml-price strong { color: #ffdb59 !important; font: 700 clamp(64px, 7vw, 94px)/1.1 Georgia, serif !important; text-shadow: 0 0 24px #ffd54d66 !important; white-space: nowrap !important; }
-.magic-landing .ml-button { display: inline-flex !important; justify-content: center !important; align-items: center !important; width: 100% !important; max-width: 480px !important; min-height: 70px !important; padding: 20px 22px !important; margin: 0 !important; border: 0 !important; border-radius: 5px !important; background: #d4af37 !important; background-image: none !important; color: #000000 !important; -webkit-text-fill-color: #000000 !important; font: 800 18px/1.4 Arial, sans-serif !important; text-align: center !important; text-decoration: none !important; white-space: normal !important; cursor: pointer !important; box-shadow: 0 4px 24px #d4af3733 !important; transition: box-shadow .2s, transform .2s !important; }
-.magic-landing .ml-button:hover:not(:disabled) { box-shadow: 0 0 35px #d4af3799 !important; transform: translateY(-2px) !important; }
-.magic-landing .ml-button:focus-visible { outline: 3px solid #ffffff !important; outline-offset: 4px !important; }
-.magic-landing .ml-button:disabled { opacity: .65 !important; cursor: default !important; }
-.magic-landing .ml-timer-box { margin-top: 25px !important; padding: 20px !important; background: #19130e !important; border: 1px solid #d4af3780 !important; border-radius: 8px !important; text-align: center !important; }
-.magic-landing .ml-timer-box p { margin-bottom: 12px !important; font-size: 13px !important; }
-.magic-landing .ml-timer { display: flex !important; justify-content: center !important; align-items: flex-start !important; gap: 18px !important; }
-.magic-landing .ml-time { display: flex !important; flex-direction: column !important; min-width: 54px !important; }
-.magic-landing .ml-time b { color: #d4af37 !important; font: 700 38px/1.2 Georgia, serif !important; font-variant-numeric: tabular-nums !important; }
-.magic-landing .ml-time small { color: #ffffff !important; font: 13px/1.6 Arial, sans-serif !important; }
-.magic-landing .ml-colon { color: #d4af37 !important; font: 30px/1.3 Georgia, serif !important; }
-.magic-landing .ml-heading { text-align: center !important; margin-bottom: 32px !important; }
-.magic-landing .ml-grid { display: grid !important; grid-template-columns: repeat(3, minmax(0, 1fr)) !important; gap: 24px !important; }
-.magic-landing .ml-bonuses { grid-template-columns: repeat(4, minmax(0, 1fr)) !important; }
-.magic-landing .ml-card { min-width: 0 !important; padding: 20px !important; background: #1b1510 !important; border: 1px solid #d4af3773 !important; border-radius: 8px !important; }
-.magic-landing .ml-card .ml-image { margin-bottom: 22px !important; }
-.magic-landing .ml-card p { margin-bottom: 0 !important; }
-.magic-landing .ml-number { display: block !important; margin-bottom: 12px !important; color: #d4af37 !important; font: 700 16px/1.5 Arial, sans-serif !important; }
-.magic-landing .ml-offer { padding: 42px 26px !important; background: radial-gradient(ellipse at center, #442e14, #17110d) !important; border: 1px solid #d4af37 !important; border-radius: 8px !important; text-align: center !important; }
-.magic-landing .ml-offer .ml-price { justify-content: center !important; }
-.magic-landing .ml-notice { margin-top: 18px !important; font-size: 14px !important; }
-.magic-landing .ml-status:empty { display: none !important; }
-.magic-landing .ml-status { margin-top: 20px !important; padding: 15px !important; border: 1px solid #d4af37 !important; background: #100d0a !important; }
-.magic-landing .ml-benefits { display: flex !important; flex-wrap: wrap !important; justify-content: center !important; gap: 18px !important; margin-top: 28px !important; }
-.magic-landing .ml-benefits span { padding: 12px 18px !important; background: #1b1510 !important; border: 1px solid #d4af3766 !important; border-radius: 5px !important; color: #ffffff !important; font: 15px/1.5 Arial, sans-serif !important; }
-.magic-landing .ml-footer { padding: 30px 0 !important; border-top: 1px solid #d4af3755 !important; text-align: center !important; }
-.magic-landing .ml-footer p { font-size: 14px !important; }
-@media (max-width: 767px) {
-  .magic-landing .ml-wrap { width: calc(100% - 32px) !important; }
-  .magic-landing .ml-section { padding: 40px 0 !important; }
-  .magic-landing .ml-banner { font-size: 14px !important; }
-  .magic-landing .ml-columns { flex-direction: column !important; align-items: stretch !important; gap: 28px !important; }
-  .magic-landing .ml-column { flex: 0 1 auto !important; width: 100% !important; }
-  .magic-landing .ml-grid, .magic-landing .ml-bonuses { display: flex !important; flex-direction: column !important; gap: 22px !important; }
-  .magic-landing .ml-card { width: 100% !important; padding: 20px !important; }
-  .magic-landing .ml-image { max-width: 100% !important; height: auto !important; margin-left: auto !important; margin-right: auto !important; }
-  .magic-landing .ml-portrait { max-width: 460px !important; }
-  .magic-landing .ml-button { font-size: 17px !important; padding: 18px 15px !important; }
-  .magic-landing .ml-offer { padding: 32px 18px !important; }
-  .magic-landing .ml-benefits { flex-direction: column !important; }
-  .magic-landing .ml-time { min-width: 44px !important; }
-  .magic-landing .ml-timer { gap: 12px !important; }
-}
-@media (prefers-reduced-motion: reduce) {
-  .magic-landing .ml-button { transition: none !important; }
-}
+@media(prefers-reduced-motion:reduce){.magic-landing .ml-button{transition:none!important}}
