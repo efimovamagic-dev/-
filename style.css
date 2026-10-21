@@ -115,3 +115,10 @@
 .magic-landing .ml-payment-widget{width:100%!important;max-width:700px!important;margin:0 auto!important;min-width:0!important}
 .magic-landing .ml-payment-widget iframe{display:block!important;max-width:100%!important;border:0!important}
 @media(max-width:767px){.magic-landing .ml-payment{padding:22px 12px!important}.magic-landing .ml-payment>h2{font-size:26px!important}}
+
+.magic-landing dialog.ml-payment{position:fixed!important;inset:0!important;width:min(700px,calc(100% - 32px))!important;max-width:calc(100% - 32px)!important;max-height:90vh!important;max-height:90dvh!important;margin:auto!important;padding:48px 20px 25px!important;overflow:auto!important;color:#fff!important;overscroll-behavior:contain!important}
+.magic-landing dialog.ml-payment:not([open]){display:none!important}
+.magic-landing dialog.ml-payment[open]{display:block!important}
+.magic-landing dialog.ml-payment::backdrop{background:#000c!important;backdrop-filter:blur(5px)!important}
+.magic-landing .ml-payment-close{position:absolute!important;right:12px!important;top:8px!important;display:grid!important;place-items:center!important;width:38px!important;height:38px!important;padding:0!important;margin:0!important;border:1px solid #d4af37!important;border-radius:5px!important;background:#17110d!important;color:#fff!important;font:28px/1 Arial,sans-serif!important;cursor:pointer!important}
+.magic-landing .ml-payment-close:focus-visible{outline:2px solid #fff!important;outline-offset:3px!important}

@@ -37,8 +37,7 @@
 </div>
 <button type="button" class="ml-button" data-order>ЗАПИСАТЬСЯ СО СКИДКОЙ 99% <span aria-hidden="true">→</span>
 </button>
-<p class="ml-status" data-status role="status">
-</p>
+
 <div class="ml-hero-timer">
 <div class="ml-timer-box">
 <p data-timer-label>ДО ОКОНЧАНИЯ ПРЕДЛОЖЕНИЯ ОСТАЛОСЬ:</p>
@@ -148,8 +147,7 @@
 </div>
 <button type="button" class="ml-button" data-order>ОФОРМИТЬ ЗАКАЗ <span aria-hidden="true">→</span>
 </button>
-<p class="ml-status" data-status role="status">
-</p>
+
 </div>
 <div>
 <div class="ml-timer-box">
@@ -175,12 +173,13 @@
 </section>
 <p class="ml-expiry" data-expiry hidden>Специальное предложение действует 24 часа.</p>
 
-<section class="ml-payment" data-payment aria-label="Оформление заказа">
-  <h2>Оформить заказ на мастер-класс</h2>
+<dialog class="ml-payment" data-payment aria-labelledby="ml-payment-title">
+  <button type="button" class="ml-payment-close" data-payment-close aria-label="Закрыть окно оплаты">×</button>
+  <h2 id="ml-payment-title">Оформить заказ</h2>
   <div class="ml-payment-widget">
     <script id="aa5f3d871334052ffab2b00eb2b6f01e8458158d" src="https://efimova-magic.ru/pl/lite/widget/script?id=1653997"></script>
   </div>
-</section>
+</dialog>
 <div class="ml-benefits">
 <div>
 <b>▱</b>
@@ -246,15 +245,20 @@
         if (!root.isConnected || !updateTimer()) clearInterval(interval);
       }, 1000);
     }
+    const paymentDialog = root.querySelector('[data-payment]');
+    root.querySelector('[data-payment-close]').addEventListener('click', () => paymentDialog.close());
+    paymentDialog.addEventListener('click', event => {
+      if (event.target !== paymentDialog) return;
+      const box = paymentDialog.getBoundingClientRect();
+      if (event.clientX < box.left || event.clientX > box.right || event.clientY < box.top || event.clientY > box.bottom) paymentDialog.close();
+    });
     all('[data-order]').forEach(button => {
       button.addEventListener('click', () => {
         if (!updateTimer()) return;
         const payment = root.querySelector('[data-payment]');
         if (payment) {
-          payment.scrollIntoView({
-            behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth',
-            block: 'start'
-          });
+          if (!payment.open) payment.showModal();
+          requestAnimationFrame(() => window.dispatchEvent(new Event('resize')));
         }
       });
     });
