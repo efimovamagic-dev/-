@@ -122,3 +122,17 @@
 .magic-landing dialog.ml-payment::backdrop{background:#000c!important;backdrop-filter:blur(5px)!important}
 .magic-landing .ml-payment-close{position:absolute!important;right:12px!important;top:8px!important;display:grid!important;place-items:center!important;width:38px!important;height:38px!important;padding:0!important;margin:0!important;border:1px solid #d4af37!important;border-radius:5px!important;background:#17110d!important;color:#fff!important;font:28px/1 Arial,sans-serif!important;cursor:pointer!important}
 .magic-landing .ml-payment-close:focus-visible{outline:2px solid #fff!important;outline-offset:3px!important}
+
+/* Unified benefit icons; mobile cards. */
+.magic-landing .ml-benefits svg{display:block!important;width:26px!important;height:26px!important;fill:none!important;stroke:currentColor!important;stroke-width:1.5!important;stroke-linecap:round!important;stroke-linejoin:round!important}
+.magic-landing .ml-benefits b{display:flex!important;align-items:center!important;justify-content:center!important;flex:0 0 32px!important}
+.magic-landing .ml-benefits p strong,.magic-landing .ml-benefits p span{display:block!important;color:#fff!important;font:inherit!important}
+@media(max-width:767px){
+.magic-landing .ml-benefits{display:flex!important;flex-direction:column!important;gap:10px!important;padding:22px 0 26px!important;margin:0!important}
+.magic-landing .ml-benefits>div{display:flex!important;align-items:center!important;gap:16px!important;min-height:86px!important;width:100%!important;margin:0!important;padding:17px 18px!important;border:1px solid #d4af3738!important;border-radius:12px!important;background:linear-gradient(110deg,#211a10,#14110c)!important;box-shadow:0 4px 18px #0003!important}
+.magic-landing .ml-benefits b{flex:0 0 44px!important;width:44px!important;height:44px!important;border:1px solid #d4af3759!important;border-radius:50%!important;color:#e7c66e!important;background:#d4af370d!important}
+.magic-landing .ml-benefits svg{width:24px!important;height:24px!important}
+.magic-landing .ml-benefits p{flex:1 1 auto!important;min-width:0!important;font:14px/1.45 Arial,sans-serif!important;text-align:left!important}
+.magic-landing .ml-benefits p strong{font-weight:700!important;margin-bottom:2px!important}
+.magic-landing .ml-benefits p span{font-size:13px!important;color:#f0e6d4!important}
+}
