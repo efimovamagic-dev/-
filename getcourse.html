@@ -109,6 +109,12 @@
 .magic-landing .ml-video{position:relative!important;width:100%!important;max-width:540px!important;aspect-ratio:16/9!important;margin:20px 0!important;overflow:hidden!important;border:1px solid #d4af3777!important;border-radius:8px!important;background:#000!important;box-shadow:0 0 25px #d4af3726!important}
 .magic-landing .ml-video iframe{position:absolute!important;inset:0!important;display:block!important;width:100%!important;max-width:100%!important;height:100%!important;margin:0!important;padding:0!important;border:0!important}
 @media(max-width:767px){.magic-landing .ml-video{max-width:100%!important;margin:20px auto!important}}
+
+.magic-landing .ml-payment{margin:26px 0!important;padding:26px 20px!important;border:1px solid #d4af3777!important;border-radius:8px!important;background:#17110d!important;scroll-margin-top:24px!important}
+.magic-landing .ml-payment>h2{text-align:center!important;margin-bottom:22px!important;font-size:30px!important}
+.magic-landing .ml-payment-widget{width:100%!important;max-width:700px!important;margin:0 auto!important;min-width:0!important}
+.magic-landing .ml-payment-widget iframe{display:block!important;max-width:100%!important;border:0!important}
+@media(max-width:767px){.magic-landing .ml-payment{padding:22px 12px!important}.magic-landing .ml-payment>h2{font-size:26px!important}}
 </style>
 <div class="magic-landing">
 <section class="ml-hero">
@@ -277,6 +283,13 @@
 </div>
 </section>
 <p class="ml-expiry" data-expiry hidden>Специальное предложение действует 24 часа.</p>
+
+<section class="ml-payment" data-payment aria-label="Оформление заказа">
+  <h2>Оформить заказ на мастер-класс</h2>
+  <div class="ml-payment-widget">
+    <script id="aa5f3d871334052ffab2b00eb2b6f01e8458158d" src="https://efimova-magic.ru/pl/lite/widget/script?id=1653997"></script>
+  </div>
+</section>
 <div class="ml-benefits">
 <div>
 <b>▱</b>
@@ -314,8 +327,6 @@
     'use strict';
     const root = document.currentScript.closest('.magic-landing');
     if (!root) return;
-    // Укажите HTTPS-ссылку на страницу оплаты.
-    const PAYMENT_URL = '';
     const key = 'candle-magic-offer-deadline-v1';
     const all = selector => root.querySelectorAll(selector);
     all('[data-year]').forEach(el => el.textContent = new Date().getFullYear());
@@ -358,18 +369,13 @@
     all('[data-order]').forEach(button => {
       button.addEventListener('click', () => {
         if (!updateTimer()) return;
-        if (PAYMENT_URL) {
-          try {
-            const url = new URL(PAYMENT_URL);
-            if (url.protocol === 'https:') {
-              window.location.assign(url.href);
-              return;
-            }
-          } catch (_) {}
+        const payment = root.querySelector('[data-payment]');
+        if (payment) {
+          payment.scrollIntoView({
+            behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth',
+            block: 'start'
+          });
         }
-        all('[data-status]').forEach(el => {
-          el.textContent = 'Приём заказов пока не открыт. Организатору необходимо подключить ссылку на безопасную оплату.';
-        });
       });
     });
   })();

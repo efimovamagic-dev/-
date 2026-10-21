@@ -109,3 +109,9 @@
 .magic-landing .ml-video{position:relative!important;width:100%!important;max-width:540px!important;aspect-ratio:16/9!important;margin:20px 0!important;overflow:hidden!important;border:1px solid #d4af3777!important;border-radius:8px!important;background:#000!important;box-shadow:0 0 25px #d4af3726!important}
 .magic-landing .ml-video iframe{position:absolute!important;inset:0!important;display:block!important;width:100%!important;max-width:100%!important;height:100%!important;margin:0!important;padding:0!important;border:0!important}
 @media(max-width:767px){.magic-landing .ml-video{max-width:100%!important;margin:20px auto!important}}
+
+.magic-landing .ml-payment{margin:26px 0!important;padding:26px 20px!important;border:1px solid #d4af3777!important;border-radius:8px!important;background:#17110d!important;scroll-margin-top:24px!important}
+.magic-landing .ml-payment>h2{text-align:center!important;margin-bottom:22px!important;font-size:30px!important}
+.magic-landing .ml-payment-widget{width:100%!important;max-width:700px!important;margin:0 auto!important;min-width:0!important}
+.magic-landing .ml-payment-widget iframe{display:block!important;max-width:100%!important;border:0!important}
+@media(max-width:767px){.magic-landing .ml-payment{padding:22px 12px!important}.magic-landing .ml-payment>h2{font-size:26px!important}}
