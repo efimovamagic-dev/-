@@ -1,75 +1,176 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#100e0b">
-  <meta name="description" content="Магия свечей — трёхдневный онлайн-мастер-класс. Создайте свою свечу намерения и откройте пространство для перемен.">
-  <title>Магия свечей — искусство маленьких перемен</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Магия свечей — онлайн-мастер-класс</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <div class="announcement"><span>СКИДКА 99% 🔥</span><span>ДЕЙСТВУЕТ ТОЛЬКО 24 ЧАСА</span></div>
-  <header class="navigation wrap"><a class="brand" href="#" aria-label="Магия свечей — главная"><span class="brand-symbol">✧</span> МАГИЯ СВЕЧЕЙ</a><a class="nav-link" href="#program">О мастер-классе <span>↗</span></a></header>
-  <main>
-    <section class="hero wrap">
-      <div class="hero-copy"><p class="eyebrow"><span class="tiny-line"></span> ОНЛАЙН-МАСТЕР-КЛАСС · 3 ДНЯ</p>
-        <h1>Простой вечерний<br>ритуал, который<br>может <em>изменить<br>вашу жизнь</em></h1>
-        <p class="hero-subtitle">Трехдневный онлайн-мастер-класс<br><strong>«МАГИЯ СВЕЧЕЙ»</strong></p>
-        <p class="muted hero-description">Зажгите свечу. Услышьте себя.<br>Откройте пространство для добрых перемен.</p>
-        <div class="price"><del>27 000 ₽</del><strong>299 <span>₽</span></strong><span class="price-note">особая цена<br>только сегодня</span></div>
-        <button class="button" data-order>ЗАПИСАТЬСЯ СО СКИДКОЙ 99% <span>↗</span></button>
-        <div class="hero-bottom"><span class="small-star">✧</span><span>Ваш маленький шаг к большим переменам</span></div>
+<body style="margin:0;background:#100d0a;">
+<div class="magic-landing">
+  <div class="ml-banner" data-banner>СКИДКА 99% 🔥 ДЕЙСТВУЕТ ТОЛЬКО 24 ЧАСА</div>
+  <header class="ml-wrap ml-header">✧ МАГИЯ СВЕЧЕЙ</header>
+  <main class="ml-wrap">
+    <section class="ml-section ml-columns">
+      <div class="ml-column">
+        <p class="ml-eyebrow">ОНЛАЙН-МАСТЕР-КЛАСС · 3 ДНЯ</p>
+        <h1>Простой вечерний ритуал, который может изменить вашу жизнь</h1>
+        <p>Трехдневный онлайн-мастер-класс «МАГИЯ СВЕЧЕЙ»</p>
+        <p>Зажгите свечу. Услышьте себя. Откройте пространство для добрых перемен.</p>
+        <div class="ml-price"><del>27 000 ₽</del><strong>299 ₽</strong></div>
+        <button type="button" class="ml-button" data-order>ЗАПИСАТЬСЯ СО СКИДКОЙ 99%</button>
+        <p class="ml-status" data-status role="status"></p>
+        <div class="ml-timer-box">
+          <p data-timer-label>ДО КОНЦА ПРЕДЛОЖЕНИЯ</p>
+          <div class="ml-timer" role="timer" aria-label="Время до окончания предложения">
+            <div class="ml-time"><b data-hours>24</b><small>часов</small></div>
+            <span class="ml-colon" aria-hidden="true">:</span>
+            <div class="ml-time"><b data-minutes>00</b><small>минут</small></div>
+            <span class="ml-colon" aria-hidden="true">:</span>
+            <div class="ml-time"><b data-seconds>00</b><small>секунд</small></div>
+          </div>
+        </div>
       </div>
-      <div class="hero-art"><img class="hero-photo" src="Алёна со свечой в янтарном свете-2.png" alt="Алёна со свечой в янтарном свете" fetchpriority="high"><div class="art-caption">Всё начинается<br><em>с одной искры</em></div><div class="countdown-panel"><p>ДО КОНЦА ПРЕДЛОЖЕНИЯ</p><div class="countdown" data-timer role="timer" aria-label="До окончания предложения"><div><b data-hours>24</b><span>часов</span></div><i>:</i><div><b data-minutes>00</b><span>минут</span></div><i>:</i><div><b data-seconds>00</b><span>секунд</span></div></div></div></div>
+      <div class="ml-column"><img class="ml-image ml-portrait" src="%D0%90%D0%BB%D1%91%D0%BD%D0%B0%20%D1%81%D0%BE%20%D1%81%D0%B2%D0%B5%D1%87%D0%BE%D0%B9%20%D0%B2%20%D1%8F%D0%BD%D1%82%D0%B0%D1%80%D0%BD%D0%BE%D0%BC%20%D1%81%D0%B2%D0%B5%D1%82%D0%B5-2.png" alt="Алёна со свечой в янтарном свете" fetchpriority="high"></div>
     </section>
-    <div class="ritual-strip"><span>СИЛА НАМЕРЕНИЯ</span><i>✧</i><span>ТЕПЛО ОГНЯ</span><i>✧</i><span>ГАРМОНИЯ ВНУТРИ</span><i>✧</i><span>МАГИЯ В ВАШИХ РУКАХ</span></div>
-    <section class="intro wrap section" id="about"><div class="intro-visual"><img src="Старинная книга при свечах и травах-6.png" alt="Старинная книга при свечах и травах" loading="lazy"><span class="image-frame"></span><div class="image-label">Маленький ритуал.<br><em>Большое значение.</em></div></div><div class="intro-copy"><p class="eyebrow">ПРИСЛУШАЙТЕСЬ К СЕБЕ</p><h2>Для тех, кому нужна<br><em>поддержка высших сил</em><br>в своих любовных<br>и денежных делах</h2><p>Иногда, чтобы сделать шаг вперёд, нужно остановиться. Оставить суету за дверью, зажечь свечу и вспомнить о том, чего вы хотите на самом деле.</p><p>На мастер-классе «Магия свечей» вы создадите свою программную свечу на удачу и познакомитесь с практиками для любви, достатка и внутренней гармонии.</p><a class="text-link" href="#program">Откройте для себя силу ритуала <span>↗</span></a></div></section>
-    <section class="program wrap section" id="program"><div class="section-heading"><p class="eyebrow">ТРИ ДНЯ · НОВЫЙ ОПЫТ</p><h2>Что вы получите<br><em>на мастер-классе?</em></h2><p class="muted">От первой искры интереса — к собственному ритуалу.</p></div><div class="program-grid">
-      <article class="program-card"><img class="card-image" src="Руки держат черную свечу с солнцем-3.png" alt="Руки держат черную свечу с солнцем" loading="lazy"><div class="card-top"><span class="number">01</span><span class="candle-icon" aria-hidden="true">♧</span></div><p class="eyebrow">ДЕНЬ ПЕРВЫЙ</p><h3>Знакомство<br>с магией свечей</h3><p>Откроете древнюю практику и узнаете, как цвет, форма и ваше намерение становятся частью личного ритуала.</p><div class="card-foot">НАЧАЛО ВАШЕГО ПУТИ <span>✧</span></div></article>
-      <article class="program-card featured"><img class="card-image" src="Свечи и кристаллы в янтарном свете-1.png" alt="Свечи и кристаллы в янтарном свете" loading="lazy"><div class="card-top"><span class="number">02</span><span class="candle-icon" aria-hidden="true">♧</span></div><p class="eyebrow">ДЕНЬ ВТОРОЙ</p><h3>Ваша свеча<br>намерения</h3><p>Шаг за шагом создадите программную свечу: от выбора материалов до работы с намерением. С понятными объяснениями и схемами.</p><div class="card-foot">СОЗДАЁМ СВОИМИ РУКАМИ <span>✧</span></div></article>
-      <article class="program-card"><img class="card-image" src="силуэт в позе лотоса у озера-8.png" alt="силуэт в позе лотоса у озера" loading="lazy"><div class="card-top"><span class="number">03</span><span class="candle-icon" aria-hidden="true">♧</span></div><p class="eyebrow">ДЕНЬ ТРЕТИЙ</p><h3>Практика любви,<br>денег и удачи</h3><p>Освоите ритуал для важных сфер жизни и научитесь возвращаться к нему самостоятельно — с вниманием к себе и своим желаниям.</p><div class="card-foot">МАГИЯ В ПОВСЕДНЕВНОСТИ <span>✧</span></div></article>
-    </div></section>
-    <section class="bonuses wrap section"><div class="bonus-heading"><div><p class="eyebrow">БОЛЬШЕ, ЧЕМ МАСТЕР-КЛАСС</p><h2>Ваши ценные <em>бонусы</em></h2></div><span class="included">✧ ВКЛЮЧЕНЫ В СТОИМОСТЬ</span></div><div class="bonus-grid"><article><img class="bonus-image" src="Старинная книга при свечах и травах-6.png" alt="Иллюстрация бонусного материала" loading="lazy"><span class="bonus-index">ПОДАРОК 01</span><h3>Готовые ритуалы<br>и схемы</h3><p>Для разных жизненных ситуаций — под рукой в нужный момент.</p></article><article><img class="bonus-image" src="Янтарные масла, травы и свечи-7.png" alt="Иллюстрация бонусного материала" loading="lazy"><span class="bonus-index">ПОДАРОК 02</span><h3>Список трав,<br>масел и свечей</h3><p>Ваш путеводитель по материалам с подробными рекомендациями.</p></article><article><img class="bonus-image" src="силуэт у женщины на озере на закате-5.png" alt="Иллюстрация бонусного материала" loading="lazy"><span class="bonus-index">ПОДАРОК 03</span><h3>Дополнительные<br>практики</h3><p>Чтобы глубже погрузиться в процесс и укрепить связь с собой.</p></article><article><img class="bonus-image" src="Красивая подарочная коробка-4.png" alt="Иллюстрация бонусного материала" loading="lazy"><span class="bonus-index">ПОДАРОК 04</span><h3>Подарочные<br>материалы</h3><p>Полезные памятки, к которым можно возвращаться снова и снова.</p></article></div></section>
-    <section class="offer wrap" id="order"><div class="offer-inner"><span class="offer-star">✧</span><p class="eyebrow">ПОЗВОЛЬТЕ СЕБЕ НЕМНОГО МАГИИ</p><h2>Ваш путь к переменам<br>начинается <em>сегодня</em></h2><p class="muted">Три дня практики. Ваша собственная свеча. Новое намерение.</p><div class="price offer-price"><del>27 000 ₽</del><strong>299 <span>₽</span></strong><span class="discount">−99%</span></div><button class="button" data-order>ОФОРМИТЬ ЗАКАЗ <span>↗</span></button><p class="offer-note" data-expiry-note>Специальное предложение действует 24 часа</p></div></section>
-    <div class="benefits wrap"><div><span>▱</span><p>Удобный формат<small>Учитесь в своём ритме</small></p></div><div><span>✧</span><p>Доступ сразу<small>После подтверждения оплаты</small></p></div><div><span>∞</span><p>Материалы с вами<small>Возвращайтесь к практикам</small></p></div><div><span>♧</span><p>Безопасная оплата<small>Через платёжный сервис</small></p></div></div>
+    <section class="ml-section ml-columns">
+      <div class="ml-column"><img class="ml-image" src="%D0%A1%D1%82%D0%B0%D1%80%D0%B8%D0%BD%D0%BD%D0%B0%D1%8F%20%D0%BA%D0%BD%D0%B8%D0%B3%D0%B0%20%D0%BF%D1%80%D0%B8%20%D1%81%D0%B2%D0%B5%D1%87%D0%B0%D1%85%20%D0%B8%20%D1%82%D1%80%D0%B0%D0%B2%D0%B0%D1%85-6.png" alt="Старинная книга при свечах и травах" loading="lazy"></div>
+      <div class="ml-column">
+        <p class="ml-eyebrow">ПРИСЛУШАЙТЕСЬ К СЕБЕ</p>
+        <h2>Для тех, кому нужна поддержка высших сил в своих любовных и денежных делах</h2>
+        <p>Иногда, чтобы сделать шаг вперёд, нужно остановиться. Оставить суету за дверью, зажечь свечу и вспомнить о том, чего вы хотите на самом деле.</p>
+        <p>На мастер-классе «Магия свечей» вы создадите свою программную свечу на удачу и познакомитесь с практиками для любви, достатка и внутренней гармонии.</p>
+      </div>
+    </section>
+    <section class="ml-section">
+      <div class="ml-heading"><p class="ml-eyebrow">ТРИ ДНЯ · НОВЫЙ ОПЫТ</p><h2>Что вы получите на мастер-классе?</h2></div>
+      <div class="ml-grid">
+      <article class="ml-card">
+        <img class="ml-image" src="%D0%A0%D1%83%D0%BA%D0%B8%20%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D1%82%20%D1%87%D0%B5%D1%80%D0%BD%D1%83%D1%8E%20%D1%81%D0%B2%D0%B5%D1%87%D1%83%20%D1%81%20%D1%81%D0%BE%D0%BB%D0%BD%D1%86%D0%B5%D0%BC-3.png" alt="Руки держат чёрную свечу с солнцем" loading="lazy">
+        <span class="ml-number">ДЕНЬ 1</span>
+        <h3>Знакомство с магией свечей</h3>
+        <p>Познакомитесь с древней практикой. Узнаете о цветах, формах и роли намерения в вашем личном ритуале.</p>
+      </article>
+      <article class="ml-card">
+        <img class="ml-image" src="%D0%A1%D0%B2%D0%B5%D1%87%D0%B8%20%D0%B8%20%D0%BA%D1%80%D0%B8%D1%81%D1%82%D0%B0%D0%BB%D0%BB%D1%8B%20%D0%B2%20%D1%8F%D0%BD%D1%82%D0%B0%D1%80%D0%BD%D0%BE%D0%BC%20%D1%81%D0%B2%D0%B5%D1%82%D0%B5-1.png" alt="Свечи и кристаллы в янтарном свете" loading="lazy">
+        <span class="ml-number">ДЕНЬ 2</span>
+        <h3>Ваша свеча намерения</h3>
+        <p>Шаг за шагом создадите программную свечу: от выбора материалов до работы с намерением. С понятными объяснениями и схемами.</p>
+      </article>
+      <article class="ml-card">
+        <img class="ml-image" src="%D1%81%D0%B8%D0%BB%D1%83%D1%8D%D1%82%20%D0%B2%20%D0%BF%D0%BE%D0%B7%D0%B5%20%D0%BB%D0%BE%D1%82%D0%BE%D1%81%D0%B0%20%D1%83%20%D0%BE%D0%B7%D0%B5%D1%80%D0%B0-8.png" alt="Силуэт в позе лотоса у озера" loading="lazy">
+        <span class="ml-number">ДЕНЬ 3</span>
+        <h3>Практика любви, денег и удачи</h3>
+        <p>Освоите практику для важных сфер жизни и научитесь возвращаться к ней самостоятельно, с вниманием к себе и своим желаниям.</p>
+      </article>
+      </div>
+    </section>
+    <section class="ml-section">
+      <div class="ml-heading"><p class="ml-eyebrow">ВКЛЮЧЕНЫ В СТОИМОСТЬ</p><h2>Ваши ценные бонусы</h2></div>
+      <div class="ml-grid ml-bonuses">
+      <article class="ml-card">
+        <img class="ml-image" src="%D0%A1%D1%82%D0%B0%D1%80%D0%B8%D0%BD%D0%BD%D0%B0%D1%8F%20%D0%BA%D0%BD%D0%B8%D0%B3%D0%B0%20%D0%BF%D1%80%D0%B8%20%D1%81%D0%B2%D0%B5%D1%87%D0%B0%D1%85%20%D0%B8%20%D1%82%D1%80%D0%B0%D0%B2%D0%B0%D1%85-6.png" alt="Старинная книга при свечах и травах" loading="lazy">
+        <span class="ml-number">ПОДАРОК 1</span>
+        <h3>Готовые ритуалы и схемы</h3>
+        <p>Материалы для разных жизненных ситуаций, к которым удобно возвращаться.</p>
+      </article>
+      <article class="ml-card">
+        <img class="ml-image" src="%D0%AF%D0%BD%D1%82%D0%B0%D1%80%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%B0%D1%81%D0%BB%D0%B0,%20%D1%82%D1%80%D0%B0%D0%B2%D1%8B%20%D0%B8%20%D1%81%D0%B2%D0%B5%D1%87%D0%B8-7.png" alt="Янтарные масла, травы и свечи" loading="lazy">
+        <span class="ml-number">ПОДАРОК 2</span>
+        <h3>Список трав и масел</h3>
+        <p>Рекомендации по выбору свечей, трав и ароматических масел.</p>
+      </article>
+      <article class="ml-card">
+        <img class="ml-image" src="%D1%81%D0%B8%D0%BB%D1%83%D1%8D%D1%82%20%D1%83%20%D0%B6%D0%B5%D0%BD%D1%89%D0%B8%D0%BD%D1%8B%20%D0%BD%D0%B0%20%D0%BE%D0%B7%D0%B5%D1%80%D0%B5%20%D0%BD%D0%B0%20%D0%B7%D0%B0%D0%BA%D0%B0%D1%82%D0%B5-5.png" alt="Женщина у озера на закате" loading="lazy">
+        <span class="ml-number">ПОДАРОК 3</span>
+        <h3>Дополнительные практики</h3>
+        <p>Практики для спокойствия, сосредоточенности и внимания к себе.</p>
+      </article>
+      <article class="ml-card">
+        <img class="ml-image" src="%D0%9A%D1%80%D0%B0%D1%81%D0%B8%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%BE%D0%B4%D0%B0%D1%80%D0%BE%D1%87%D0%BD%D0%B0%D1%8F%20%D0%BA%D0%BE%D1%80%D0%BE%D0%B1%D0%BA%D0%B0-4.png" alt="Красивая подарочная коробка" loading="lazy">
+        <span class="ml-number">ПОДАРОК 4</span>
+        <h3>Подарочные материалы</h3>
+        <p>Полезные памятки и материалы, которые останутся у вас.</p>
+      </article>
+      </div>
+    </section>
+    <section class="ml-section">
+      <div class="ml-offer">
+        <p class="ml-eyebrow">ПОЗВОЛЬТЕ СЕБЕ НЕМНОГО МАГИИ</p>
+        <h2>Ваш путь к переменам начинается сегодня</h2>
+        <p>Три дня практики, ваша собственная свеча и четыре ценных бонуса.</p>
+        <div class="ml-price"><del>27 000 ₽</del><strong>299 ₽</strong></div>
+        <button type="button" class="ml-button" data-order>ОФОРМИТЬ ЗАКАЗ</button>
+        <p class="ml-status" data-status role="status"></p>
+        <p class="ml-notice" data-expiry>Специальное предложение действует 24 часа.</p>
+      </div>
+      <div class="ml-benefits"><span>Удобный онлайн-формат</span><span>Доступ после оплаты</span><span>Безопасная оплата</span></div>
+    </section>
   </main>
-  <footer class="footer wrap"><a class="brand" href="#">✧ МАГИЯ СВЕЧЕЙ</a><p>© <span id="year">2026</span> Магия свечей</p><p>Практики для самопознания. Результаты индивидуальны.</p></footer>
-  <dialog id="order-dialog" aria-labelledby="dialog-title"><button class="close-dialog" aria-label="Закрыть">×</button><p class="eyebrow">ВАШ ПЕРВЫЙ ШАГ</p><h2 id="dialog-title">Магия <em>свечей</em></h2><p>Трёхдневный онлайн-мастер-класс<br>и четыре ценных бонуса</p><div class="price"><strong>299 ₽</strong></div><p id="payment-status">Приём заказов пока не открыт. Ссылка на безопасную оплату появится здесь после подключения организатором.</p><button class="button close-order">ПОНЯТНО <span>✧</span></button></dialog>
+  <footer class="ml-wrap ml-footer"><p>✧ МАГИЯ СВЕЧЕЙ</p><p>Практики для самопознания. Результаты индивидуальны.</p></footer>
   <script>
-    // Set an HTTPS payment URL here when the organizer connects a payment provider.
+  (() => {
+    'use strict';
+    const root = document.currentScript.closest('.magic-landing');
+    if (!root) return;
+    // Укажите HTTPS-ссылку на страницу оплаты.
     const PAYMENT_URL = '';
-    const storageKey = 'candle-magic-offer-deadline-v1';
+    const key = 'candle-magic-offer-deadline-v1';
+    const all = selector => root.querySelectorAll(selector);
     let deadline;
-    try { deadline = Number(localStorage.getItem(storageKey)); } catch (_) {}
+    try { deadline = Number(localStorage.getItem(key)); } catch (_) {}
     if (!Number.isFinite(deadline) || deadline <= 0) {
       deadline = Date.now() + 24 * 60 * 60 * 1000;
-      try { localStorage.setItem(storageKey, String(deadline)); } catch (_) {}
+      try { localStorage.setItem(key, String(deadline)); } catch (_) {}
     }
     function updateTimer() {
-      const seconds = Math.max(0, Math.ceil((deadline - Date.now()) / 1000));
-      const values = { hours: Math.floor(seconds / 3600), minutes: Math.floor(seconds / 60) % 60, seconds: seconds % 60 };
-      for (const [key, value] of Object.entries(values)) document.querySelectorAll('[data-' + key + ']').forEach(el => el.textContent = String(value).padStart(2, '0'));
-      if (!seconds) {
-        document.querySelector('.countdown-panel p').textContent = 'ВРЕМЯ ПРЕДЛОЖЕНИЯ ИСТЕКЛО';
-        document.querySelector('[data-expiry-note]').textContent = 'Срок специального предложения истёк';
-        document.querySelector('.announcement').textContent = 'МАГИЯ СВЕЧЕЙ · ТРЁХДНЕВНЫЙ МАСТЕР-КЛАСС';
-        document.querySelectorAll('[data-order]').forEach(button => { button.disabled = true; button.textContent = 'ПРЕДЛОЖЕНИЕ ЗАВЕРШЕНО'; });
+      const total = Math.max(0, Math.ceil((deadline - Date.now()) / 1000));
+      const values = {
+        hours: Math.floor(total / 3600),
+        minutes: Math.floor(total / 60) % 60,
+        seconds: total % 60
+      };
+      Object.entries(values).forEach(([name, value]) => {
+        all('[data-' + name + ']').forEach(el => {
+          el.textContent = String(value).padStart(2, '0');
+        });
+      });
+      if (total === 0) {
+        root.querySelector('[data-timer-label]').textContent = 'ПРЕДЛОЖЕНИЕ ЗАВЕРШЕНО';
+        root.querySelector('[data-banner]').textContent = 'МАГИЯ СВЕЧЕЙ · ОНЛАЙН-МАСТЕР-КЛАСС';
+        root.querySelector('[data-expiry]').textContent = 'Срок специального предложения истёк.';
+        all('[data-order]').forEach(button => {
+          button.disabled = true;
+          button.textContent = 'ПРЕДЛОЖЕНИЕ ЗАВЕРШЕНО';
+        });
         return false;
       }
       return true;
     }
-    if (updateTimer()) { const interval = setInterval(() => { if (!updateTimer()) clearInterval(interval); }, 1000); }
-    const dialog = document.getElementById('order-dialog');
-    document.querySelectorAll('[data-order]').forEach(button => button.addEventListener('click', () => {
-      if (!updateTimer()) return;
-      if (PAYMENT_URL && new URL(PAYMENT_URL).protocol === 'https:') window.location.assign(PAYMENT_URL);
-      else dialog.showModal();
-    }));
-    document.querySelectorAll('.close-dialog, .close-order').forEach(button => button.addEventListener('click', () => dialog.close()));
-    dialog.addEventListener('click', event => { const r = dialog.getBoundingClientRect(); if (event.clientX < r.left || event.clientX > r.right || event.clientY < r.top || event.clientY > r.bottom) dialog.close(); });
-    document.getElementById('year').textContent = new Date().getFullYear();
+    if (updateTimer()) {
+      const interval = setInterval(() => {
+        if (!root.isConnected || !updateTimer()) clearInterval(interval);
+      }, 1000);
+    }
+    all('[data-order]').forEach(button => {
+      button.addEventListener('click', () => {
+        if (!updateTimer()) return;
+        if (PAYMENT_URL) {
+          try {
+            const url = new URL(PAYMENT_URL);
+            if (url.protocol === 'https:') {
+              window.location.assign(url.href);
+              return;
+            }
+          } catch (_) {}
+        }
+        all('[data-status]').forEach(el => {
+          el.textContent = 'Приём заказов пока не открыт. Организатору необходимо подключить ссылку на безопасную оплату.';
+        });
+      });
+    });
+  })();
   </script>
+</div>
 </body>
 </html>
