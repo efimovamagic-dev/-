@@ -209,6 +209,7 @@
     if (!root) return;
     const key = 'candle-magic-offer-deadline-v1';
     const all = selector => root.querySelectorAll(selector);
+    all('[data-year]').forEach(el => el.textContent = new Date().getFullYear());
     let deadline;
     try { deadline = Number(localStorage.getItem(key)); } catch (_) {}
     if (!Number.isFinite(deadline) || deadline <= 0) {
